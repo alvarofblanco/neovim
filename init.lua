@@ -25,10 +25,10 @@ require('lazy').setup {
   require 'plugins.autocompletion',
   require 'plugins.none-ls',
   require 'plugins.gitsigns',
-  -- require 'plugins.alpha',
-  -- require 'plugins.indent-blankline',
-  -- require 'plugins.misc',
-  -- require 'plugins.comment',
+  require 'plugins.alpha',
+  require 'plugins.indent-blankline',
+  require 'plugins.misc',
+  require 'plugins.comment',
 }
 
 --require'nvim-treesitter.configs'.setup {
