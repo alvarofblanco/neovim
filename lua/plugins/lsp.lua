@@ -15,6 +15,7 @@ return {
     -- Allows extra capabilities provided by blink.cmp
     'saghen/blink.cmp',
   },
+  -- NOTE aqui hay algo
   config = function()
     -- Brief aside: **What is LSP?**
     --
@@ -231,7 +232,7 @@ return {
             },
           },
         },
-      }
+      },
     }
 
     -- Ensure the servers and tools above are installed

@@ -29,6 +29,8 @@ require('lazy').setup {
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.comment',
+  require 'plugins.typescript',
+  require 'plugins.conform',
 }
 
 --require'nvim-treesitter.configs'.setup {
