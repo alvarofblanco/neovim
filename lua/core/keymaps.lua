@@ -81,3 +81,7 @@ end, { desc = 'Go to next diagnostic message' })
 
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- Code Folding
+vim.keymap.set('n', '-', '<cmd>foldclose<CR>', { desc = 'Close code fold' })
+vim.keymap.set('n', '+', '<cmd>foldopen<CR>', { desc = 'Open code fold' })

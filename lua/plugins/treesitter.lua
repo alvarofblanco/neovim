@@ -5,7 +5,7 @@ return { -- Highlight, edit, and navigate code
   event = { 'BufReadPost', 'BufNewFile' },
   -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
   config = function()
-    require('nvim-treesitter.configs').setup {
+    require('nvim-treesitter.configs').setup ({
       ensure_installed = {
         'lua',
         'python',
@@ -58,6 +58,6 @@ return { -- Highlight, edit, and navigate code
           enable_close_on_slash = true,
         },
       },
-    }
+    })
   end,
 }
