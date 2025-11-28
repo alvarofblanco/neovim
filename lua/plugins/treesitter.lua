@@ -5,7 +5,7 @@ return { -- Highlight, edit, and navigate code
   event = { 'BufReadPost', 'BufNewFile' },
   -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
   config = function()
-    require('nvim-treesitter.configs').setup ({
+    require('nvim-treesitter.configs').setup {
       ensure_installed = {
         'lua',
         'python',
@@ -37,18 +37,19 @@ return { -- Highlight, edit, and navigate code
         'passwd',
         'csv',
         'query',
+        'xml',
       },
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },
 
-      -- Enable autotag
-      autotag = {
-        enable = true,
-        enable_close = true,
-        enable_rename = true,
-        enable_close_on_slash = true,
-      },
+      -- -- Enable autotag
+      -- autotag = {
+      --   enable = true,
+      --   enable_close = true,
+      --   enable_rename = true,
+      --   enable_close_on_slash = true,
+      -- },
 
       -- Setup for nvim ts autotag
       require('nvim-ts-autotag').setup {
@@ -58,6 +59,6 @@ return { -- Highlight, edit, and navigate code
           enable_close_on_slash = true,
         },
       },
-    })
+    }
   end,
 }
